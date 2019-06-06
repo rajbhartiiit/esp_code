@@ -1,5 +1,5 @@
 build/program//udp_server.o: \
- /Volumes/case-sensitive/myesp/raj/udp_server.c \
+ /Volumes/case-sensitive/myesp/esp_code/udp_server.c \
  ../esp-open-rtos/libc/xtensa-lx106-elf/include/stdio.h \
  ../esp-open-rtos/libc/xtensa-lx106-elf/include/_ansi.h \
  ../esp-open-rtos/libc/xtensa-lx106-elf/include/newlib.h \

@@ -1,4 +1,5 @@
-build/program//wifi_task.o: /Volumes/case-sensitive/myesp/raj/wifi_task.c \
+build/program//wifi_task.o: \
+ /Volumes/case-sensitive/myesp/esp_code/wifi_task.c \
  ../esp-open-rtos/include/espressif/esp_common.h \
  ../esp-open-rtos/libc/xtensa-lx106-elf/include/stdint.h \
  ../esp-open-rtos/libc/xtensa-lx106-elf/include/machine/_default_types.h \

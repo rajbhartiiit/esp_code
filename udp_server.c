@@ -72,9 +72,19 @@ void udp_server_task()
             // int err = sendto(sockfd, (const char *)hello, strlen(hello),
             //                  0, (const struct sockaddr *)&cliaddr,
             //                  len);
+	struct sockaddr_in saaaaaa;
+    saaaaaa.sin_family = AF_INET;
+    // sa.sin_addr.s_addr = esp_ipinfo.ip.addr | ~esp_ipinfo.netmask.addr;
+    // saaaaaa.sin_addr.s_addr = inet_addr("192.168.1.102");
+    // saaaaaa.sin_addr.s_addr = inet_addr(IpAddress);
+    saaaaaa.sin_port = htons(10000);
+
+            // int err = sendto(sockfd, hello, strlen(hello),
+            //                  0, (const struct sockaddr *)&cliaddr,
+            //                  16);
             int err = sendto(sockfd, hello, strlen(hello),
-                             0, (const struct sockaddr *)&cliaddr,
-                             16);
+                             0, &saaaaaa,
+                             sizeof(struct sockaddr));                 
 
             printf("err %d\n", err);
             if (err < 0)

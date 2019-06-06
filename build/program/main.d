@@ -1,4 +1,4 @@
-build/program//main.o: /Volumes/case-sensitive/myesp/raj/main.c \
+build/program//main.o: /Volumes/case-sensitive/myesp/esp_code/main.c \
  ../esp-open-rtos/libc/xtensa-lx106-elf/include/unistd.h \
  ../esp-open-rtos/libc/xtensa-lx106-elf/include/sys/unistd.h \
  ../esp-open-rtos/libc/xtensa-lx106-elf/include/_ansi.h \
